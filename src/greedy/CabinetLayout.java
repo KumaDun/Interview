@@ -32,31 +32,31 @@ import java.util.Scanner;
 
 
  */
-public class DataCenterPowerLayout {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        char[] cabinets = sc.nextLine().toCharArray();
-        int count = 0;
-        int i = 0;
-        while (i < cabinets.length) {
-            char c = cabinets[i];
-            if (c == 'M') {
-                if (i + 1 < cabinets.length && cabinets[i + 1] == 'I') {
-                    count++;
-                    i += 3;
-                } else if (i - 1 >= 0 && cabinets[i - 1] == 'I') {
-                    count++;
-                    i++;
-                } else {
-                    count = -1;
-                    break;
-                }
-            } else {
-                i++;
-            }
-        }
-        System.out.println(count);
-    }
-}
+//public class DataCenterPowerLayout {
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        char[] cabinets = sc.nextLine().toCharArray();
+//        int count = 0;
+//        int i = 0;
+//        while (i < cabinets.length) {
+//            char c = cabinets[i];
+//            if (c == 'M') {
+//                if (i + 1 < cabinets.length && cabinets[i + 1] == 'I') {
+//                    count++;
+//                    i += 3;
+//                } else if (i - 1 >= 0 && cabinets[i - 1] == 'I') {
+//                    count++;
+//                    i++;
+//                } else {
+//                    count = -1;
+//                    break;
+//                }
+//            } else {
+//                i++;
+//            }
+//        }
+//        System.out.println(count);
+//    }
+//}
 
 

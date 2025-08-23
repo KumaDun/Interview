@@ -93,11 +93,12 @@ public class PalindromicSubstring {
             if (s.charAt(i) == s.charAt(j)) {
                 i = i - 1;
                 j = j + 1;
-            } else {
-                // when meet break condition, i and j already plus 1, so need to minus 2
-                return j - i - 1;
+                continue;
             }
+            break;
         }
+        // when meet break condition, i and j already plus 1, so need to minus 2
+        return j - i - 1;
     }
 
 

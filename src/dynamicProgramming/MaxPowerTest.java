@@ -1,6 +1,7 @@
 package dynamicProgramming;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import slidingWindow.MaxPower;
 
 public class MaxPowerTest {
     MaxPower sol = new MaxPower();
